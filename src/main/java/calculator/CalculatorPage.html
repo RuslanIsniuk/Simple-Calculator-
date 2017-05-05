@@ -1,0 +1,73 @@
+<html xmlns:wicket="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+        label {
+            background-color: #eee;
+            padding: 4px;
+        }
+
+        .feedbackPanelERROR {
+            color: red;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container col-md-offset-4 col-md-3">
+    <div class="row col-md-offset-1">
+        <p>
+        <h2>Simple Calculator Example</h2></p>
+    </div>
+    <div class="well">
+        <div wicket:id="feedback"></div>
+        <form wicket:id="calcForm" class="form-horizontal">
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label>Number 1 :</label>
+                </div>
+                <div class="col-md-6">
+                    <input wicket:id="num1" class="form-control" type="text" size="20"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-4">
+                    <label>Number 2 :</label>
+                </div>
+                <div class="col-md-6">
+                    <input wicket:id="num2" class="form-control" type="text" size="20"/>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-10">
+                    <label>Select operation type :</label>
+                </div>
+
+                <div class="col-md-offset-1 col-md-6">
+                    <span wicket:id="hosting"></span>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row col-md-offset-5">
+                    <input type="submit" value="Calculate" class="btn btn-primary"/>
+                </div>
+            </div>
+
+
+        </form>
+
+        <p>
+            <font color="#228b22"><label wicket:id="result"></label></font>
+        </p>
+    </div>
+</div>
+</body>
+</html>
