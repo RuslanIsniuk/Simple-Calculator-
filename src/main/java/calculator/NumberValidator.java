@@ -11,7 +11,7 @@ public class NumberValidator extends CompoundValidator<String> {
     public NumberValidator() {
 
         add(StringValidator.lengthBetween(1, 100));
-        add(new PatternValidator("([0-9]+)||([0-9]+(\\u002E\\d{1,2})?)"));
+        add(new PatternValidator("([0-9]+)||([0-9]+(\\u002E\\d{1,20})?)"));
 
     }
 }
